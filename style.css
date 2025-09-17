@@ -50,8 +50,20 @@ nav {
   letter-spacing: 1px;
 }
 
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 15px;       /* add some padding like a button */
+  border-radius: 8px;      /* rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth hover */
+}
+
+/* Hover effect */
 nav a:hover {
-  text-decoration: underline;
+  background-color: #333;  /* dark background */
+  color: #fff;             /* white text */
+  text-decoration: none;
+  transform: translateY(-2px); /* optional slight lift */
 }
 
 /* =========================================
@@ -410,12 +422,12 @@ footer {
 
   .save-date h2 {
     font-size: 3rem;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .save-date-subtext {
     font-size: 1rem;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .save-date-grid,
@@ -472,7 +484,6 @@ footer {
 
   .save-date h2 {
     font-size: 2.2rem;
-    margin-left: 10px;
   }
 
   .save-date-subtext {
