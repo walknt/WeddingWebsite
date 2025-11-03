@@ -3,129 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>Wedding Page</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <nav>
-      <a href="#travel-information">Travel</a>
-      <a href="#rsvp">RSVP</a>
-    </nav>
-
-    <div class="hero">
-      <img src="img/tempHero.jpg" alt="Wedding Image">
-      <div class="hero-text">
-        Andrew and Nikea
-        <div class="hero-subtext">
-          Saturday, June 32, 2026 | Pop Pop’s Lawn
-        </div>
-        <a href="#rsvp" class="hero-btn">RSVP</a>
+  <div class="decor-wrapper">
+    <!-- Decorative box -->
+    <div class="home-section">
+      <div class="decor-box" id="box"></div>
+      <div class="text-wrap" id="text">
+        <h1 class="names">Nikea & Andrew</h1>
+        <p class="date">Saturday 23 May 2026</p>
+        <button class="rsvp-btn" id="scrollToRsvp">RSVP</button>
       </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Save the Date Section -->
-  <section class="save-date">
-    <hr class="section-line">
-    <h2>Save the Date!</h2>
-    <p class="save-date-subtext">Join us for a wonderful celebration!</p>
-    <div class="save-date-grid">
-      <div class="save-date-item">
-        <hr class="item-line">
-        <h3>Date</h3>
-        <p>Saturday, June 32, 2026</p>
-      </div>
-      <div class="save-date-item">
-        <hr class="item-line">
-        <h3>Time</h3>
-        <p>6:00 PM Ceremony</p>
-      </div>
-      <div class="save-date-item">
-        <hr class="item-line">
-        <h3>Location</h3>
-        <p>Pop Pop’s Lawn</p>
-      </div>
-      
+  <!-- Decorative horizontal line -->
+  <div class="fade-line"></div>
+
+  <!-- Schedule Section -->
+  <section class="schedule-section">
+    <h2>Schedule</h2>
+    <div class="schedule-item"><p><strong>2:30 PM:</strong> Guest Arrival</p></div>
+    <div class="schedule-item"><p><strong>3:00 PM:</strong> Ceremony</p></div>
+    <div class="schedule-item"><p><strong>3:30 PM:</strong> Cocktails & Canapés</p></div>
+    <div class="schedule-item"><p><strong>5:00 PM:</strong> Reception & Formalities</p></div>
+    <div class="schedule-item"><p><strong>9:45 PM:</strong> Last Call</p></div>
+    <div class="schedule-item"><p><strong>10:00 PM:</strong> Reception Concludes</p></div>
+    <div class="schedule-item"><p><strong>10:10 PM:</strong> Complimentary Coach Departs</p></div>
+  </section>
+
+  <!-- Decorative line -->
+  <div class="fade-line"></div>
+
+  <!-- Finer Details Section -->
+  <section class="faq-section">
+    <h2>The Finer Details</h2>
+    <div class="faq-item">
+      <p><strong>Parking</strong></p>
+      <p>Limited on-site parking is available for vendors and guests. Priority will be given to elderly guests, those with disabilities, and expectant mothers.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Complimentary Transfers</strong></p>
+      <p>The Valley Estate offers a complimentary one-way coach service at the end of the evening to Broadbeach and Surfers Paradise. Please confirm your preferred drop-off location when RSVPing.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Curfew</strong></p>
+      <p>All guests must vacate the property by 10:20pm.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Dress Code: Formal Attire</strong></p>
+      <p>Please dress in formal wear to complement the elegance of the day.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Accommodation</strong></p>
+      <p>Exclusive rates at local hotels. Please refer to the accommodation guide via the RSVP link.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>RSVP</strong></p>
+      <p>Kindly respond by 5th April 2026. Include dietary requirements and coach transfer preferences.</p>
     </div>
   </section>
-  <br>
-    <br><br>
-    <br>
-  
- 
 
-  <section class="parallax-image">
-    </section>
+  <!-- Parallax Image -->
+  <section class="parallax-image"></section>
 
-
-  <section id="travel-information" class = "travel-information">
-    <br>
+  <!-- Travel Information -->
+  <section id="travel-information" class="travel-information">
     <h2>Travel Information</h2>
     <div class="save-date-grid-travel">
       <div class="save-date-item-travel">
-
-        <h3>Flights</h3>
-        <p>Flight Deals</p>
-        <a href="files/Document2.pdf" target="_blank" class="pdf-btn">Flight Deals</a>
+        <h3>Accommodation</h3>
+        <p>A list of Hotels nearby the venue have been provided. Partnered with local accommodation providers, valley estate provides various discounts on bookings</p>
+        <a href="F1.pdf" target="_blank" class="pdf-btn">Accommodation</a>
       </div>
       <div class="save-date-item-travel">
-
-        <h3>Hotels</h3>
-        <p>Hotel Deals</p>
-        <a href="files/Document2.pdf" target="_blank" class="pdf-btn">Hotel Deals</a>
-      </div>
-      <div class="save-date-item-travel">
-
-        <h3>Other</h3>
-        <p>Other Important Info</p>
-        <a href="files/Document2.pdf" target="_blank" class="pdf-btn">Other Information</a>
-      </div>
-
-    
-  </section>
-  <!-- 
-  <section class="PDFs">
-     <div class="info-box additional-info">
-      <h3>Additional Information</h3>
-      <p>Download important documents:</p>
-      <div class="pdf-buttons">
-        <a href="files/Document1.pdf" target="_blank" class="pdf-btn">PDF 1</a>
-        <a href="files/Document2.pdf" target="_blank" class="pdf-btn">PDF 2</a>
+        <h3>Invitation PDF</h3>
+        <p>If you're tired of visiting the website, a pdf form of all the information has been provided below.</p>
+        <a href="F2.pdf" target="_blank" class="pdf-btn">Invitation PDF</a>
       </div>
     </div>
   </section>
-  -->
-  <br>
+
+  <!-- RSVP Form -->
   <section id="rsvp">
     <h2>RSVP</h2>
     <div class="rsvp-container">
       <form id="rsvpForm" class="rsvp-form">
         <label for="name">Your Name(s)</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
-
         <label for="attendance">Will you be attending?</label>
         <select id="attendance" name="attendance" required>
           <option value="">-- Please choose --</option>
           <option value="Yes">Am Attending</option>
           <option value="No">Not Attending</option>
         </select>
-
         <label for="diet">Any notes or questions?</label>
         <textarea id="diet" name="diet" placeholder="e.g., dietary restrictions, questions"></textarea>
-
         <button type="submit">Submit</button>
       </form>
       <p class="success" id="successMessage">✅ Thank you! Your RSVP has been recorded.</p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    If you have any questions please call x or email y
+    If you have any important questions please call x or email y
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
