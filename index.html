@@ -52,7 +52,8 @@
     </div>
     <div class="faq-item">
       <p><strong>Complimentary Transfers</strong></p>
-      <p>The Valley Estate offers a complimentary one-way coach service at the end of the evening to Broadbeach and Surfers Paradise. Please confirm your preferred drop-off location when RSVPing.</p>
+      <p>To ensure our guests travel comfortably, The Valley Estate will provide a complimentary one-way coach service at the conclusion of the evening. Transfers will be available to Broadbeach (Victoria Park Bus Stop, near The Star Casino) and Surfers Paradise (Ferny Avenue Bus Stop).
+</p><p>Should you wish to take advantage of this service, kindly indicate your preferred drop-off location when submitting your RSVP.</p>
     </div>
     <div class="faq-item">
       <p><strong>Curfew</strong></p>
@@ -87,7 +88,7 @@
       <div class="save-date-item-travel">
         <h3>Invitation PDF</h3>
         <p>If you're tired of visiting the website, a pdf form of all the information has been provided below.</p>
-        <a href="F2.pdf" target="_blank" class="pdf-btn">Invitation PDF</a>
+        <a href="F3.pdf" target="_blank" class="pdf-btn">Invitation PDF</a>
       </div>
     </div>
   </section>
@@ -97,19 +98,38 @@
     <h2>RSVP</h2>
     <div class="rsvp-container">
       <form id="rsvpForm" class="rsvp-form">
-        <label for="name">Your Name(s)</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <label for="attendance">Will you be attending?</label>
-        <select id="attendance" name="attendance" required>
-          <option value="">-- Please choose --</option>
-          <option value="Yes">Am Attending</option>
-          <option value="No">Not Attending</option>
-        </select>
-        <label for="diet">Any notes or questions?</label>
-        <textarea id="diet" name="diet" placeholder="e.g., dietary restrictions, questions"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <p class="success" id="successMessage">✅ Thank you! Your RSVP has been recorded.</p>
+  <label for="name">Your Name(s)</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+  <label for="attendance">Will you be attending?</label>
+  <select id="attendance" name="attendance" required>
+    <option value="">-- Please choose --</option>
+    <option value="Yes">Am Attending</option>
+    <option value="No">Not Attending</option>
+  </select>
+
+  <label for="coach">Will you be using a Complimentary Transfer for Drop Off?</label>
+  <select id="coach" name="coach">
+    <option value="">-- Please choose --</option>
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+  </select>
+
+  <div id="coachLocationContainer" style="display: none;">
+    <label for="coachLocation">Preferred Drop-off Location</label>
+    <select id="coachLocation" name="coachLocation">
+      <option value="">-- Select location --</option>
+      <option value="Ipswich">Broadbeach</option>
+      <option value="Gold Coast">Surfers Paradise</option>
+    </select>
+  </div>
+
+  <label for="diet">Any notes or questions?</label>
+  <textarea id="diet" name="diet" placeholder="e.g., dietary restrictions, questions"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+<p class="success" id="successMessage">✅ Thank you! Your RSVP has been recorded.</p>
     </div>
   </section>
 

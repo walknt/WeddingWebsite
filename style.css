@@ -138,7 +138,7 @@ section.parallax-image {
 }
 
 .parallax-image {
-  background-image: url('img/weddingVenue.jpg');
+  background-image: url('img/im5.jpg');
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,8 @@ section.travel-information {
   margin-left: 50px;
   margin-right: 50px;
 }
-
+/*0416402224
+nikea-coulson92@outlook.com*/
 
 .save-date-grid-travel {
   display: flex;
@@ -378,4 +379,16 @@ footer {
   }
 }
 
+#coachLocationContainer {
+  transition: all 0.3s ease;
+}
 
+
+#coachLocationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}

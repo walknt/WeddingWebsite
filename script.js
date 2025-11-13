@@ -54,7 +54,7 @@ form.addEventListener('submit', async (e) => {
   const formData = new FormData(form);
 
   try {
-    await fetch("https://script.google.com/macros/s/AKfycbwSRNGWMHij4xTWXbV3Nsm4bjNhzgY6s_KmVZYKYga_jaa90kyacfu6jmE-EaXyyem6/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbzBzDCiZhPy5NjFwmLfrish8mNZZMWeWIEHPo6eGfOkk6mB6DJzFIVNwa_ZYBOyz1o4/exec", {
       method: "POST",
       body: formData
     });
@@ -71,4 +71,16 @@ form.addEventListener('submit', async (e) => {
 
 document.getElementById("scrollToRsvp").addEventListener("click", function() {
   document.getElementById("rsvp").scrollIntoView({ behavior: "smooth" });
+});
+
+const coachSelect = document.getElementById("coach");
+const coachLocationContainer = document.getElementById("coachLocationContainer");
+
+coachSelect.addEventListener("change", () => {
+  if (coachSelect.value === "Yes") {
+    coachLocationContainer.style.display = "block";
+  } else {
+    coachLocationContainer.style.display = "none";
+    document.getElementById("coachLocation").value = ""; // reset
+  }
 });
